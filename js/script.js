@@ -4,7 +4,7 @@ const options = {
     scroll: true,
     plugins: [
         new SwupScrollPlugin({
-            animateScroll: false,
+            animateScroll: true,
             animateHistoryBrowsing: true,
             doScrollingRightAway: true
         }),
