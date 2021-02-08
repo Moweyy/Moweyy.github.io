@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/revealer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link href= "https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="./js/wow.js"></script>
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="./node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.min.js"></script>
+    <script defer src="./node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Nick Teo - Portfolio</title>
+
+    <script>
+        new WOW().init();
+        
+    </script>
+
+    
+    <script>
+        window.addEventListener('scroll', () => {
+        const scrolls = window.scrollY;
+        const arrow = document.querySelector('.works-pointer');
+        if(scrolls>150 && window.innerWidth > 768) {
+            $(arrow).fadeOut(200);
+        }
+        else {
+            $(arrow).fadeIn(200);
+        }
+    })
+    </script>
+
+</head>
+<body>
+    <main id="swup">
+        <div class="navbar">
+            <nav class="container">
+                <a href="/index.html"><img class="logo" src="./images/logobw.png" alt=""></a>
+                <ul>
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <section id="index" class="index-hero">
+            <img class="hero-logo wow fadeIn" src="./images/logo2.svg" alt="">
+            <div class="container grid">
+                <div class="section-header">
+                    <h1 class="section-title wow fadeInUp" data-wow-duration="1s">
+                        <div class="text-loader-mask">
+                            <div class="text-loader">
+                                <span class="">Nick Teo</span>
+                            </div>
+                        </div>
+                    </h1>
+                    <div class="role-list">
+                        <p class="lead">Front-end web
+                            <ul class="role-list-text">
+                                <li class="role-list-item w1">&nbsp;developer.</li>
+                                <li class="role-list-item w2">&nbsp;designer.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="socials wow fadeInUp" data-wow-duration="1s">
+                        <ul>
+                            <li><a href="https://github.com/Moweyy" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/nickteojs/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fas fa-file fa-2x"></i></a></li>
+                            <li><a href="mailto:finalmoweyy@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                        </ul>     
+                    </div>
+                </div>
+                <div class="works-pointer">
+                    <a href="#works"><i class="fas fa-angle-double-down"></i></a></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="index-works">
+            <div class="container grid py-5 wow fadeIn" data-wow-offset="15" data-wow-duration="1.5s">
+                <div class="section-header">
+                    <h1 class="secondary-title">Featured Works</h1>
+                </div>
+                <div class="project-box wow fadeInUp" style="background-image: url(./images/UJTN.jpg);" data-wow-duration="1s">
+                    <!-- <div class="project-desc-overlay"> -->
+                        <h1 class="project-number">01</h1>
+                        <div class="card" tabindex="0">
+                            <span class="card__infoicon">
+                              <i class="fas fa-info"></i>
+                            </span>
+                            <h1 class="card__title">Unjumble</h1>
+                            <p class="card__description">Informational website on Dyslexia.</p>
+                            <a href="/work-unjumble.html"><div class="btn-light">View</div></a>
+                        </div>
+                        <!-- <div class="project-desc-copy">
+                            <h1 class="section-title">Unjumble</h1>
+                            <p class="section-paragraph">Educational Website</p>
+                            <a href="/work-bengawan.html"><div class="btn-light">View</div></a>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="project-box wow fadeInUp" style="background-image: url(./images/BGWTN.jpg);" data-wow-duration="1s">
+                    <h1 class="project-number">02</h1>
+                    <div class="card" tabindex="0">
+                        <span class="card__infoicon">
+                          <i class="fas fa-info"></i>
+                        </span>
+                        <h1 class="card__title">Bengawan Solo</h1>
+                        <p class="card__description">Bakery website revamp.</p>
+                        <a href="/work-bengawan.html"><div class="btn-light">View</div></a>
+                    </div>
+                    <!-- <div class="project-desc">
+                        <h1 class="section-title">Bengawan Solo</h1>
+                        <p class="lead">Bakery website revamp</p>
+                        <a href="/work-bengawan.html"><div class="btn">View</div></a>
+                    </div> -->
+                </div>
+                <div class="project-box wow fadeInUp" style="background-image: url(./images/RBTN.jpg);">
+                    <h1 class="project-number">03</h1>
+                    <div class="card" tabindex="0">
+                        <span class="card__infoicon">
+                            <i class="fas fa-info"></i>
+                        </span>
+                        <h1 class="card__title">Burger Builder</h1>
+                        <p class="card__description">Burger creation and ordering application built on React.</p>
+                        <a href="/work-bengawan.html"><div class="btn-light">View</div></a>
+                    </div>
+                    <!-- <div class="project-desc">
+                        <h1 class="section-title">Burger Builder</h1>
+                        <p class="lead">React Project</p>
+                        <a href="work-bengawan.html"><div class="btn">View</div></a>
+                    </div> -->
+                </div>
+                <div class="project-box wow fadeInUp" style="background-image: url(./images/YCTN.jpg);">
+                    <h1 class="project-number">04</h1>
+                    <div class="card" tabindex="0">
+                        <span class="card__infoicon">
+                            <i class="fas fa-info"></i>
+                        </span>
+                        <h1 class="card__title">YelpCamp</h1>
+                        <p class="card__description">Campsite listing and booking application.</p>
+                        <a href="/work-bengawan.html"><div class="btn-light">View</div></a>
+                    </div>
+                    <!-- <div class="project-desc">
+                        <h1 class="section-title">YelpCamp</h1>
+                        <p class="lead">Camp Booking Website</p>
+                        <a href="work-bengawan.html"><div class="btn">View</div></a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact" class="index-about">
+            <div class="container grid">
+                <div class="section-header wow fadeInUp">
+                    <h1 class="section-title">
+                        About Me
+                    </h1>
+                    <p class="section-paragraph">Hi there! I'm Nick, a frontend web developer and designer. 
+                        It inspires me how easily one can learn new technologies to further develop themselves 
+                        and the industry. Web development is a rapidly evolving, adaptive organism with so much 
+                        potential and this drives me to constantly learn new technologies. I hope to use my skills 
+                        to make traversing the web something that is easy, engaging, and efficient. 
+                        <a href="mailto:finalmoweyy@gmail.com" class="highlight">Let's chat!</a></p>
+                </div>
+                <div class="skills wow fadeInUp">
+                    <h1 class="secondary-title">
+                        Skills:
+                    </h1>
+                    <ul>
+                        <li class="oval"><i class="fab fa-html5 fa-2x"></i></li>
+                        <li class="oval"><i class="fab fa-css3-alt fa-2x"></i></li>
+                        <li class="oval"><i class="fab fa-js-square fa-2x"></i></li>
+                        <li class="oval"><i class="fab fa-react fa-2x"></i></li>
+                        <li class="oval"><i class="fab fa-github fa-2x"></i></li>
+                    </ul>
+                </div>
+                <div class="back-to-top">
+                    <a href="#index"><i class="fas fa-angle-double-down"></i></a></i>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            once: true
+                });
+            </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@swup/overlay-theme": "^1.1.1",
+    "@swup/scroll-plugin": "^1.0.6",
+    "swup": "^2.0.14"
+  }
+}

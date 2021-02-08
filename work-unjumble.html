@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="./js/wow.js"></script>
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <script src="./node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.min.js"></script>
+    <script defer src="./node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Nick Teo - Portfolio</title>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</head>
+<body>
+    <div id="top"></div>
+    <main id="swup" class="transition-fade">
+        <section class="unjumble-about wow fadeIn" data-wow-duration="2s">
+            <div class="container grid">
+                <div>
+                    <a class="back-arrow" href="/index.html#works"><span class="go-back">Home</span><i class="fas fa-long-arrow-alt-left fa-lg"></i></a>
+                    <a class="back-arrow2" href="/work-bengawan.html"><span class="go-back">Next project</span><i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
+                </div>
+                <div class="section-header wow fadeIn">
+                    <h1 class="section-title">
+                        Unjumble
+                    </h1>
+                    <p class="lead highlight">Description:</p>
+                    <p class="section-paragraph">This is an educational website I built for a school assignment. 
+                        The objective was to help increase awareness of a learning disorder by providing information through a website.</p>
+                </div>
+                <div class="stack wow fadeIn">
+                    <p class="lead highlight">
+                        Built on:
+                    </h1>
+                    <ul>
+                        <li class="oval">HTML</li>
+                        <li class="oval">CSS (Grid, Flexbox)</li>
+                        <li class="oval">Javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section class="unjumble-preview wow fadeIn" data-wow-duration="2s"> 
+            <div class="container grid pb-5 mb-3">
+                <h1 class="secondary-title"><span class="underline">Preview</span></h1>
+                <div class="preview" id="style-1">
+                    <img class="preview-width" src="./images/unjumble-preview.png" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <section class="unjumble-mobile-preview wow fadeIn" data-wow-offset="50" data-wow-duration="2s">
+            <div class="container grid pb-5">
+                <h1 class="secondary-title"><span class="underline">Mobile Preview</span></h1>
+                <div class="mobile-preview" id="style-1">
+                    <img class="preview-width" src="./images/unjumble-mobile-preview.png" alt="">
+                </div>
+                <div class="demo-links">
+                    <h1 class="section-title">Like what you see? View the full project!</h1>
+                    <a href="https://nickteo-unjumble-f50c5b.netlify.app" target="_blank"><div class="btn">Demo</div></a>
+                    <a href="https://github.com/Moweyy/unjumble-responsive" target="_blank"><div class="btn">Github</div></a>
+                </div>
+            </div>
+        </section>
+        <div class="back-to-top">
+            <a href="#top"><i class="fas fa-angle-double-down"></i></a></i>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</body>
+</html>
