@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/revealer.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <link href= "https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="./js/wow.js"></script>
-    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <!-- <script defer src="./node_modules/swup/dist/swup.min.js"></script>
     <script defer src="./node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.min.js"></script>
-    <script defer src="./node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js"></script>
+    <script defer src="./node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js"></script> -->
     <script defer src="./js/script.js"></script>
     <title>Nick Teo - Portfolio</title>
 
-    <script>
+    <!-- <script>
         new WOW().init();
         
-    </script>
+    </script> -->
 
     
     <script>
@@ -42,9 +42,13 @@
     </script>
 
 </head>
-<body>
-    <main id="swup">
-        <div class="navbar">
+<body data-barba="wrapper">
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+      </div>
+    <main id="swup" data-barba="container" data-barba-namespace="home">
+        <div class="navbar content-out">
             <nav class="container">
                 <a href="/index.html"><img class="logo" src="./images/logobw.png" alt=""></a>
                 <ul>
@@ -55,7 +59,7 @@
             </nav>
         </div>
     
-        <section id="index" class="index-hero">
+        <section id="index" class="index-hero content-out">
             <img class="hero-logo wow fadeIn" src="./images/logo2.svg" alt="">
             <div class="container grid">
                 <div class="section-header">
@@ -88,8 +92,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="works" class="index-works">
+        <section id="works" class="index-works content-out">
             <div class="container grid py-5 wow fadeIn" data-wow-offset="15" data-wow-duration="1.5s">
                 <div class="section-header">
                     <h1 class="secondary-title">Featured Works</h1>
@@ -163,7 +166,7 @@
             </div>
         </section>
     
-        <section id="contact" class="index-about">
+        <section id="contact" class="index-about content-out">
             <div class="container grid">
                 <div class="section-header wow fadeInUp">
                     <h1 class="section-title">
@@ -195,14 +198,8 @@
         </section>
         
     </main>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    
-    <script>
-        AOS.init({
-            once: true
-                });
-            </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 </body>
 </html>

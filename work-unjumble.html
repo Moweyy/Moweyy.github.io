@@ -14,18 +14,22 @@
     <script defer src="./js/script.js"></script>
     <title>Nick Teo - Portfolio</title>
 
-    <script>
+    <!-- <script>
         new WOW().init();
-    </script>
+    </script> -->
 
 </head>
-<body>
+<body data-barba="wrapper">
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+      </div>
     <div id="top"></div>
-    <main id="swup" class="transition-fade">
-        <section class="unjumble-about wow fadeIn" data-wow-duration="2s">
+    <main id="swup" class="transition-fade" data-barba="container" data-barba-namespace="unjumble">
+        <section class="unjumble-about wow fadeIn content-out" data-wow-duration="2s">
             <div class="container grid">
                 <div>
-                    <a class="back-arrow" href="/index.html#works"><span class="go-back">Home</span><i class="fas fa-long-arrow-alt-left fa-lg"></i></a>
+                    <a class="back-arrow" href="/index.html"><span class="go-back">Home</span><i class="fas fa-long-arrow-alt-left fa-lg"></i></a>
                     <a class="back-arrow2" href="/work-bengawan.html"><span class="go-back">Next project</span><i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
                 </div>
                 <div class="section-header wow fadeIn">
@@ -49,16 +53,19 @@
             </div>
         </section>
     
-        <section class="unjumble-preview wow fadeIn" data-wow-duration="2s"> 
+        <section class="unjumble-preview wow fadeIn content-out" data-wow-duration="2s"> 
             <div class="container grid pb-5 mb-3">
                 <h1 class="secondary-title"><span class="underline">Preview</span></h1>
                 <div class="preview" id="style-1">
-                    <img class="preview-width" src="./images/unjumble-preview.png" alt="">
+                    <div class="loading-overlay">
+                        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                    <img class="preview-width hide" src="./images/unjumble-preview.png" alt="">
                 </div>
             </div>
         </section>
     
-        <section class="unjumble-mobile-preview wow fadeIn" data-wow-offset="50" data-wow-duration="2s">
+        <section class="unjumble-mobile-preview wow fadeIn content-out" data-wow-offset="50" data-wow-duration="2s">
             <div class="container grid pb-5">
                 <h1 class="secondary-title"><span class="underline">Mobile Preview</span></h1>
                 <div class="mobile-preview" id="style-1">
@@ -77,5 +84,8 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </body>
 </html>
