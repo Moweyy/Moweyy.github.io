@@ -296,7 +296,7 @@ nav ul li a:hover:after {
 }
 
 .index-works .grid {
-    grid-template-rows: 0.4fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     gap: 30px;
     padding-left: 40px;
     padding-right: 40px;
