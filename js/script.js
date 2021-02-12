@@ -56,14 +56,14 @@ function delay(n) {
 function pageTransition() {
     var tl = gsap.timeline();
     tl.to(".loading-screen", {
-        duration: 0.8,
+        duration: 1.5,
         width: "100%",
         left: "0%",
         ease: "Expo.easeInOut",
     });
 
     tl.to(".loading-screen", {
-        duration: 0.6,
+        duration: 1.3,
         width: "100%",
         left: "100%",
         ease: "Expo.easeInOut",
@@ -89,18 +89,18 @@ $(function () {
                 async leave(data) {
                     const done = this.async();
                     pageTransition();
-                    await delay(500);
+                    await delay(1000);
                     done();
                 },
                 // Animates the content in once you enter any page
                 async enter(data) {
                     contentAnimation();
-                    $(function(){
-                        $('.preview img').imagesLoaded().done(function(){
-                          $('.preview .loading-overlay').remove();
-                          $('.preview img.hide').removeClass('hide');
-                        })
-                    });
+                    // $(function(){
+                    //     $('.preview img').imagesLoaded().done(function(){
+                    //       $('.preview .loading-overlay').remove();
+                    //       $('.preview img.hide').removeClass('hide');
+                    //     })
+                    // });
                 },
                 // Animates the content in the first time you load in
                 async once(data) {
@@ -112,11 +112,11 @@ $(function () {
 });
 
 
-// Image Loader
-$(function(){
-    $('.preview img').imagesLoaded().done(function(){
-      $('.preview .loading-overlay').remove();
-      $('.preview img.hide').removeClass('hide');
-    })
-});
+// // Image Loader
+// $(function(){
+//     $('.preview img').imagesLoaded().done(function(){
+//       $('.preview .loading-overlay').remove();
+//       $('.preview img.hide').removeClass('hide');
+//     })
+// });
 
