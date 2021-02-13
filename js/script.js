@@ -1,3 +1,18 @@
+
+new WOW().init();
+
+window.addEventListener('scroll', () => {
+    const scrolls = window.scrollY;
+    const arrow = document.querySelector('.works-pointer');
+    if(scrolls>150 && window.innerWidth > 768) {
+        $(arrow).fadeOut(200);
+    }
+    else {
+        $(arrow).fadeIn(200);
+    }
+})
+
+// Page Transitions
 function delay(n) {
     n = n || 2000;
     return new Promise((done) => {
@@ -58,3 +73,5 @@ $(function () {
         ],
     });
 });
+
+

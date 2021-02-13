@@ -354,11 +354,6 @@ nav ul li a:hover:after {
     background: var(--primary-color);
     z-index: 50;
     visibility: hidden;
-    /* animation-name: overlay-slide;
-    transform-origin: left;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: initial; */
     transition: width 0.5s ease-in-out;
 }
 
@@ -454,51 +449,51 @@ nav ul li a:hover:after {
     color: white;
 }
 
-/* Works - Unjumbled */
-.unjumble-about {
+/* Works Pages */
+.works-about {
     height: 600px;
     color: white;
 }
 
-.unjumble-about .grid{
+.works-about .grid{
     grid-template-columns: 0.8fr;
     grid-template-rows: 0.7fr 0.3fr;
     justify-content: start;
     gap: 0px;
 }
 
-.unjumble-about .section-header {
+.works-about .section-header {
     align-self: flex-end;
 }
 
-.unjumble-about .lead {
+.works-about .lead {
     margin-top: 25px;
 }
 
-.unjumble-about .section-paragraph {
+.works-about .section-paragraph {
     margin-top: 14px;
 }
 
-.unjumble-about .stack {
+.works-about .stack {
     align-self: flex-start;
 }
 
-.unjumble-about ul {
+.works-about ul {
     margin-top: 20px;
 }
 
-.unjumble-about ul li {
+.works-about ul li {
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 12px;
 }
 
-.unjumble-preview {
+.works-preview {
     height: auto;
     color: white;
 }
 
-.unjumble-preview .grid {
+.works-preview .grid {
     grid-template-columns: 0.9fr;
     justify-content: start;
 }
@@ -515,18 +510,18 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
-.unjumble-mobile-preview {
+.works-mobile-preview {
     height: auto;
     color: white;
 }
 
-.unjumble-mobile-preview .grid {
+.works-mobile-preview .grid {
     grid-template-columns: 0.4fr 0.8fr;
     justify-content: start;
     column-gap: 50px;
 }
 
-.unjumble-mobile-preview .grid .secondary-title {
+.works-mobile-preview .grid .secondary-title {
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -539,59 +534,14 @@ nav ul li a:hover:after {
     overflow-x: hidden;
 }
 
-.unjumble-mobile-preview .demo-links {
+.works-mobile-preview .demo-links {
     align-self: flex-end;
     max-width: 600px;
 }
 
-.unjumble-mobile-preview .section-title {
+.works-mobile-preview .section-title {
     margin-bottom: 25px;
 }
-
-/* Back To Top */
-
-.back-to-top {
-    padding: 30px 0px;
-}
-
-.back-to-top .fa-angle-double-down {
-    animation-duration: 1.75s;
-    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);    
-    animation-iteration-count: infinite;
-    color: white;
-    transition: 0.5s;
-    display: block;
-    transform: rotate(180deg);
-}
-
-.back-to-top .fa-angle-double-down:hover {
-    color: var(--primary-color);
-}
-
-.fa-long-arrow-alt-left,
-.fa-long-arrow-alt-right {
-    color: white;
-    transition: 0.25s all ease-in-out;
-}
-.fa-long-arrow-alt-left:hover,
-.fa-long-arrow-alt-right:hover {
-    color: var(--primary-color);
-}
-
-.back-arrow:hover .go-back {
-    opacity: 1;
-    color: white;
-}
-
-.back-arrow2 {
-    margin-left: 40px;
-}
-
-.back-arrow2:hover .go-back {
-    opacity: 1;
-    color: white;
-}
-
 
 /* Media Queries */
 

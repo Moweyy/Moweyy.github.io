@@ -77,12 +77,10 @@
 /* Grid */
 .grid {
     display: grid;
-    /* Both columns have equal WIDTH of 1 fr unit */
     grid-template-columns: 0.35fr;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    /* 100% of it's container, which is showcase (400px) */
     height: 100%;
 }
 
@@ -268,26 +266,6 @@
     transform: translateX(100px);
 } */
 
-
-/* Swup Transitions */
-
-.transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-    transform: translateX(100);
-    transform-origin: left;
-}
-
-html.is-animating .transition-fade {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-html.is-leaving .transition-fade {
-    opacity: 0;
-    transform: translateX(0);
-}
-
 /* Animations */
 @keyframes arrow-fade {
         0% {opacity: 1; transform: translateY(0px) scale(1);}
@@ -304,22 +282,18 @@ html.is-leaving .transition-fade {
 }
 
 /* Scrollbar */
-
-#style-1::-webkit-scrollbar-track
-{
+#style-1::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
     background-color: transparent;
 }
 
-#style-1::-webkit-scrollbar
-{
+#style-1::-webkit-scrollbar {
 	width: 4px;
 	background-color: transparent;
 }
 
-#style-1::-webkit-scrollbar-thumb
-{
+#style-1::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: white;
@@ -412,10 +386,6 @@ html.is-leaving .transition-fade {
     transition: 400ms;
 }
 
-/* .work-page-nav:hover .go-back {
-    opacity: 1;
-}    */
-
 .back-arrow {
     width: 20px;
 }
@@ -431,7 +401,7 @@ html.is-leaving .transition-fade {
     z-index: 999;
   }
   
-  .loading-container {
+.loading-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -440,4 +410,47 @@ html.is-leaving .transition-fade {
     overflow: hidden;
     z-index: 990;
     pointer-events: none;
-  }
+}
+  
+/* Back To Top */
+.back-to-top {
+    padding: 30px 0px;
+}
+
+.back-to-top .fa-angle-double-down {
+    animation-duration: 1.75s;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);    
+    animation-iteration-count: infinite;
+    color: white;
+    transition: 0.5s;
+    display: block;
+    transform: rotate(180deg);
+}
+
+.back-to-top .fa-angle-double-down:hover {
+    color: var(--primary-color);
+}
+
+.fa-long-arrow-alt-left,
+.fa-long-arrow-alt-right {
+    color: white;
+    transition: 0.25s all ease-in-out;
+}
+.fa-long-arrow-alt-left:hover,
+.fa-long-arrow-alt-right:hover {
+    color: var(--primary-color);
+}
+
+.back-arrow:hover .go-back {
+    opacity: 1;
+    color: white;
+}
+
+.back-arrow2 {
+    margin-left: 40px;
+}
+
+.back-arrow2:hover .go-back {
+    opacity: 1;
+    color: white;
+}
