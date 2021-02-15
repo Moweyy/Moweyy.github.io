@@ -176,9 +176,11 @@ nav ul li a:hover:after {
     0% {
         -webkit-transform:translate3d(0,0,0);
         transform:translate3d(0,0,0);
+        -webkit-filter: opacity(100%);
         opacity: 100%;
     }
     30% {
+        -webkit-filter: opacity(0.5%);
         opacity: 0.5%;
     }
     35% {
@@ -189,12 +191,14 @@ nav ul li a:hover:after {
     58% {
         -webkit-transform:translate3d(0,-80%,0);
         transform:translate3d(0,-80%,0);
+        -webkit-filter: opacity(0%);
         opacity: 0%;
     }
     /* Developer at bottom */
     59% {
         -webkit-transform:translate3d(0,146%,0);
         transform:translate3d(0,146%,0);
+        -webkit-filter: opacity(0%);
         opacity: 0%;
     }
     60% {
@@ -202,12 +206,14 @@ nav ul li a:hover:after {
         transform:translate3d(0, 100%,0);
     }
     75% {
+        -webkit-filter: opacity(0.5%);
         opacity: 0.5%;
     }
     /* Developer back in original pos */
     100% {
         -webkit-transform:translate3d(0,0%,0);
         transform:translate3d(0,0%,0);
+        -webkit-filter: opacity(100%);
         opacity: 100%;
     }
 }
@@ -217,32 +223,38 @@ nav ul li a:hover:after {
     0% {
         -webkit-transform:translate3d(0,-20%,0);
         transform:translate3d(0,-20%,0);
+        -webkit-filter: opacity(0%);
         opacity: 0%;
     }
     25% {
+        -webkit-filter: opacity(0.5%);
         opacity: 0.5%;
     }
     /* Designer at visible pos */
     55% {
         -webkit-transform:translate3d(0,-146%,0);
         transform:translate3d(0, -146%,0);
+        -webkit-filter: opacity(100%);
         opacity: 100%;
     }
     80% {
         -webkit-transform:translate3d(0,-176%,0);
         transform:translate3d(0, -176%,0);
+        -webkit-filter: opacity(0.5%);
         opacity: 0.5%;
     }
     /* Designer goes to top */
     90% {
         -webkit-transform:translate3d(0,-210%,0);
         transform:translate3d(0,-210%,0);
+        -webkit-filter: opacity(0%);
         opacity: 0%;
     }
     /* Designer back in visible pos */
     100% {
         -webkit-transform:translate3d(0,-146%,0);
         transform:translate3d(0, -146%,0);
+        -webkit-filter: opacity(0%);
         opacity: 0%;
     }
 }
@@ -728,6 +740,10 @@ nav ul li a:hover:after {
 
     .works-about ul li {
         margin-right: 0px;
+    }
+
+    .works-about .section-title {
+        font-size: 3rem;
     }
 
     .preview {
