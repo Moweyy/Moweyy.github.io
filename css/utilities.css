@@ -272,6 +272,12 @@
     transition: 400ms;
 }
 
+@media (max-width: 480px) {
+    .go-back {
+        display: none;
+    }
+}
+
 .back-arrow {
     width: 20px;
 }

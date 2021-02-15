@@ -436,9 +436,24 @@ nav ul li a:hover:after {
     text-shadow: 4px 4px 6px rgba(0,0,0,0.5);}
 
 .project-desc {
+    width: 100%;
+    height: 100%;
+}
+
+.proj-desc-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 59;
+    background-color: rgba(28,29,37,0.8);
+}
+
+.project-desc-copy {
+    width: 100%;
+    height: auto;
     position: relative;
-    top: 260px;
-    left: 50px;
+    z-index: 61;
+    top: 3.5rem;
 }
 
 .project-desc .lead {
@@ -457,12 +472,6 @@ nav ul li a:hover:after {
 .project-desc-copy .btn-light {
     margin-left: 1em;
     color: var(--dark);
-}
-
-.project-desc-copy {
-    width: 100%;
-    bottom: 10%;
-    left: 3%;
 }
 
 
@@ -606,7 +615,7 @@ nav ul li a:hover:after {
 }
 
 /* Media Queries */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     html {
         font-size: 14px;
     }
@@ -641,8 +650,8 @@ nav ul li a:hover:after {
     }
 
     .project-box {
-        width: 380px;
-        height: 200px;
+        width: 350px;
+        height: 185px;
         margin-bottom: 65px;
     }
 
@@ -650,21 +659,17 @@ nav ul li a:hover:after {
         transform: none;
     }
 
-    .project-box::before {
-        background-color: rgba(28,29,37,0.75);
-    }
-
     .project-number {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .project-desc {
-        top: 6.5rem;
-        left: 1rem;
+        text-align: center;
     }
 
     .project-desc .section-title{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .project-desc .lead {
@@ -711,6 +716,10 @@ nav ul li a:hover:after {
         justify-content: center;
     }
 
+    .works-about ul li {
+        margin-right: 0px;
+    }
+
     .preview {
         height: auto;
         overflow-x: hidden;
@@ -723,7 +732,7 @@ nav ul li a:hover:after {
     }
 
     .mobile-preview {
-        width: 400px;
+        width: 100%;
         grid-column-start: 1;
         grid-column-end: 4;
         margin-bottom: 20px;
