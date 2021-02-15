@@ -335,7 +335,6 @@ nav ul li a:hover:after {
     width: 750px;
     height: 397px;
     background-size: contain;
-    margin-bottom: 150px;
     -webkit-box-shadow: 4px 5px 4px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 4px 5px 4px 0px rgba(0,0,0,0.5);
     box-shadow: 4px 5px 4px 0px rgba(0,0,0,0.5);
@@ -343,6 +342,10 @@ nav ul li a:hover:after {
     transition: 200ms ease-in-out;
     z-index: 53;
     display: inline-block;
+}
+
+.project-box:not(:last-child) {
+    margin-bottom: 150px;
 }
 
 .project-box::before {
@@ -467,7 +470,7 @@ nav ul li a:hover:after {
     height: 100%;
     position: absolute;
     z-index: 59;
-    background-color: rgba(28,29,37,0.8);
+    background-color: rgba(28,29,37,0.7);
 }
 
 .project-desc-copy {
@@ -475,7 +478,7 @@ nav ul li a:hover:after {
     height: auto;
     position: relative;
     z-index: 61;
-    top: 3.5rem;
+    top: 3.3rem;
 }
 
 .project-desc .lead {
@@ -641,13 +644,23 @@ nav ul li a:hover:after {
     html {
         font-size: 14px;
     }
+
+    nav ul {
+        margin-right: 0px;
+    }
+
     nav ul li {
+        padding-top: 2.7rem;
+        margin: 0 10px;
+    }
+
+    nav ul li:first-child {
         display: none;
     }
 
     .navbar .logo {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
 
     .index-hero .grid {
@@ -661,19 +674,26 @@ nav ul li a:hover:after {
     }
 
     .hero-logo {
-        width: 400px;
-        height: 400px;
-        margin-left: -200px;
-        margin-top: -200px;
+        width: 350px;
+        height: 350px;
+        margin-left: -175px;
+        margin-top: -210px;
     }
 
     .index-hero .socials {
         margin-top: 1rem;
     }
 
+    .works-pointer {
+        margin-bottom: 20px;
+    }
+
     .project-box {
         width: 350px;
         height: 185px;
+    }
+
+    .project-box:not(:last-child) {
         margin-bottom: 65px;
     }
 
@@ -738,6 +758,14 @@ nav ul li a:hover:after {
         justify-content: center;
     }
 
+    .works-about {
+        height: 550px;
+    }
+
+    .works-about .grid {
+        grid-template-rows: 0.6fr 0.3fr;
+    }
+
     .works-about ul li {
         margin-right: 0px;
     }
@@ -759,6 +787,7 @@ nav ul li a:hover:after {
 
     .mobile-preview {
         width: 100%;
+        height: 680px;
         grid-column-start: 1;
         grid-column-end: 4;
         margin-bottom: 20px;
