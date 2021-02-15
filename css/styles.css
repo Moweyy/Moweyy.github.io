@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url(../images/background4.jpg) no-repeat center center fixed;
+    background: url(../images/background5.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -463,6 +463,7 @@ nav ul li a:hover:after {
 .project-desc {
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .proj-desc-overlay {
@@ -654,10 +655,6 @@ nav ul li a:hover:after {
         margin: 0 10px;
     }
 
-    nav ul li:first-child {
-        display: none;
-    }
-
     .navbar .logo {
         width: 30px;
         height: 30px;
@@ -707,6 +704,7 @@ nav ul li a:hover:after {
 
     .project-desc {
         text-align: center;
+        display: block;
     }
 
     .project-desc .section-title{
