@@ -35,25 +35,22 @@
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
-    margin-right: 15px;
+    padding: 0.8em 1.875em;
+    margin-right: 0.975rem;
     cursor: pointer;
     background-color: var(--primary-color);
     color: white;
     font-weight: bold;
     transition: 200ms ease-in-out;
     outline: none;
-    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
 }
 
 .btn-light {
-    display: inline-block;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 200ms ease-in-out;
-    outline: none;
-    font-size: 14px;
     background-color: var(--primary-color);
     color: white;
     -webkit-box-shadow: -1px 1px 5px 1.5px rgba(0,0,0,0.075);
@@ -66,8 +63,15 @@
     color: white;
 }
 
-.btn:hover {
-    background-color: var(--secondary-color);
+@media (max-width: 500px) {
+    .btn {
+        font-size: 0.7rem;
+    }
+
+    
+    .works-mobile-preview .btn {
+        font-size: 0.9rem;
+    }
 }
 
 .subpoint {
@@ -208,63 +212,23 @@
 /* Text Sizing */
 
 .section-title {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .secondary-title {
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 
 .lead {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .section-paragraph {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
     margin: 20px 0;
 }
-
-/* .text-loader {
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    transition: -webkit-transform .65s cubic-bezier(.694,.048,.335,1);
-    transition: transform .65s cubic-bezier(.694,.048,.335,1);
-    transition: transform .65s cubic-bezier(.694,.048,.335,1),-webkit-transform .65s cubic-bezier(.694,.048,.335,1);
-    z-index: 60;
-} */
-
-/* .text-loader-mask {
-    display: inline-block;
-    position: relative;
-    padding-top: 10px;
-    padding-right: 10px;
-    overflow: hidden;
-    transition: all .2s ease;
-} */
-
-/* .text-loader {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: white;
-    top: 0;
-    left: 0;
-    transform: translateX(0px);
-} */
-
-/* .text-loader:hover {
-    transition: all 2s;
-    transform: translateX(100px);
-} */
 
 /* Animations */
 @keyframes arrow-fade {
@@ -299,89 +263,11 @@
 	background-color: white;
 }
 
-
-.card {
-    width: 100%;
-    position:relative;
-    height: 100%;
-    padding:42px 32px;
-    clip-path: circle(3% at 95% 10%);
-    transition: all ease-in-out .3s;
-    background-color: rgba(0,35,67,0.9);
-    color: white;
-}
-
-.card__infoicon {
-    position:absolute;
-    top:30px;
-    right:35px;
-    font-size:0.9em;
-    color: white;
-    transition:ease-out .3s;
-}
-
-.card__title{
-    margin-top: 3em;
-    font-size: 50px;
-    line-height:1.5;
-}
-
-.card__description{
-    margin-bottom: 1.1em;
-    font-size: 1.1em;
-    line-height:1.6;
-}
-
-.card__credits{
-    margin:0;
-    padding: 4px 0;    
-    font-size: 1.1em;
-}
-
-.card__reference{
-    display:inline-block;
-    border-bottom: 1px solid transparent;
-    color:#0099ff;
-    text-decoration:none;
-    transition: ease-in .3s;
-}
-
-.card:hover{
-    border-bottom-color: #0099ff;
-    transform: scale(1.005);
-}
-
-/* .card:hover, .card:focus .card__infoicon{
-    clip-path: circle(75%);
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-    0px 3px 18px rgba(0,0,0,0.08);
-    background-color: rgba(0,35,67,0.9);
-    outline:none;
-} */
-
-.project-box:hover .card {
-    clip-path: circle(75%);
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-    0px 3px 18px rgba(0,0,0,0.08);
-    background-color: rgba(0,35,67,0.9);
-    outline:none;
-    transform:scale(1.005)
-}
-
-.project-box:hover .card__infoicon{
-    opacity: 0;
-}
-    
-.card:focus{
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
-                0px 3px 18px rgba(0,0,0,0.08), 
-                0px 0px 0px 4px rgba(0,0,0,0.2);
-}
   
 .go-back {
     position: absolute;
     top: 65px;
-    font-size: 14px;
+    font-size: 0.875rem;
     opacity: 0;
     transition: 400ms;
 }
