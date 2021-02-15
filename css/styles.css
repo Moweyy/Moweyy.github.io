@@ -139,13 +139,20 @@ nav ul li a:hover:after {
     text-align: left;
 }
 
+.role-list-item {
+    display: block;
+}
+
 .index-hero .lead {
     font-size: 1.125rem;
     margin-top: 10px;
 }
 
 .w1 {
-    animation-name: change-1;
+    animation: change-1;
+    -webkit-animation: change-1;
+    -moz-animation: change-1;
+    -o-animation: change-1;
     animation-duration: 4s;
     animation-delay: 1s;
     animation-iteration-count:infinite;
@@ -154,7 +161,10 @@ nav ul li a:hover:after {
 }
 
 .w2 {
-    animation-name: change-2;
+    animation: change-2;
+    -webkit-animation: change-2;
+    -moz-animation: change-2;
+    -o-animation: change-2;
     animation-duration: 4s;
     animation-delay: 1s;
     animation-iteration-count: infinite;

@@ -27,6 +27,7 @@
     color: white;
     transition: 200ms ease-in-out;
     outline: none;
+    font-size: 0.875rem;
 }
 
 .oval:hover {
