@@ -681,7 +681,7 @@ nav ul li a:hover:after {
         margin-top: 1rem;
     }
 
-    .works-pointer {
+    .works-pointer .fa-angle-double-down {
         display: none;
     }
 
