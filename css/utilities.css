@@ -329,9 +329,17 @@
     color: white;
     transition: 0.25s all ease-in-out;
 }
+
 .fa-long-arrow-alt-left:hover,
 .fa-long-arrow-alt-right:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+    .fa-long-arrow-alt-left:hover,
+    .fa-long-arrow-alt-right:hover {
+        color: white;
+    }
 }
 
 .back-arrow:hover .go-back {

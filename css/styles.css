@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url(../images/background2.jpg) no-repeat center center fixed;
+    background: url(../images/background3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -677,7 +677,7 @@ nav ul li a:hover:after {
         width: 350px;
         height: 350px;
         margin-left: -175px;
-        margin-top: -210px;
+        margin-top: -175px;
     }
 
     .index-hero .socials {
