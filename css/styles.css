@@ -334,7 +334,7 @@ nav ul li a:hover:after {
 .project-box {
     width: 750px;
     height: 397px;
-    background-size: contain;
+    background-size: cover;
     -webkit-box-shadow: 4px 5px 4px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 4px 5px 4px 0px rgba(0,0,0,0.5);
     box-shadow: 4px 5px 4px 0px rgba(0,0,0,0.5);
