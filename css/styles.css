@@ -471,7 +471,7 @@ nav ul li a:hover:after {
     height: 100%;
     position: absolute;
     z-index: 59;
-    background-color: rgba(28,29,37,0.7);
+    background-color: rgba(28,29,37,0.65);
 }
 
 .project-desc-copy {
@@ -479,16 +479,11 @@ nav ul li a:hover:after {
     height: auto;
     position: relative;
     z-index: 61;
-    top: 3.3rem;
 }
 
 .project-desc .lead {
     margin-bottom: 15px;
     font-size: 18px;
-}
-
-.project-desc-copy .section-title {
-    margin-left: 0.2em;
 }
 
 .project-desc-copy .section-paragraph {
@@ -641,11 +636,47 @@ nav ul li a:hover:after {
 }
 
 /* Media Queries */
-@media (max-width: 480px) {
-    html {
-        font-size: 14px;
+@media (max-width: 1440px) {
+    .works-about {
+        height: 550px;
     }
 
+    .works-about .grid {
+        grid-template-rows: 0.7fr 0.3fr;
+    }
+
+    .works-about .grid,
+    .works-preview .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-mobile-preview .grid {
+        grid-template-columns: 0.4fr 1fr;
+        column-gap: 50px;
+    }
+
+    .preview {
+        height: 625px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .preview {
+        height: 575px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .index-about .grid {
+        grid-template-columns: 0.8fr;
+    }
+
+    .works-mobile-preview .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
     nav ul {
         margin-right: 0px;
     }
@@ -656,14 +687,8 @@ nav ul li a:hover:after {
     }
 
     .navbar .logo {
-        width: 30px;
-        height: 30px;
-    }
-
-    .index-hero .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.95fr 0.04fr;
-        justify-content: center;
+        width: 40px;
+        height: 40px;
     }
 
     .index-hero .section-title {
@@ -674,7 +699,7 @@ nav ul li a:hover:after {
         width: 350px;
         height: 350px;
         margin-left: -175px;
-        margin-top: -200px;
+        margin-top: -150px;
     }
 
     .index-hero .socials {
@@ -686,8 +711,8 @@ nav ul li a:hover:after {
     }
 
     .project-box {
-        width: 350px;
-        height: 185px;
+        width: 550px;
+        height: 292px;
     }
 
     .project-box:not(:last-child) {
@@ -699,7 +724,7 @@ nav ul li a:hover:after {
     }
 
     .project-number {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .project-desc {
@@ -717,6 +742,10 @@ nav ul li a:hover:after {
         margin-bottom: 0.9rem;
     }
 
+    .project-desc-copy {
+        top: 5rem;
+    }
+
     .card {
         display: none;
     }
@@ -724,16 +753,13 @@ nav ul li a:hover:after {
     .index-about {
         height: 700px;
     }
+
     .index-about .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.9fr;
     }
 
     .index-about .section-paragraph {
         line-height: 1.7rem;
-    }
-
-    .text-break {
-        display: block;
     }
 
     .index-about ul li {
@@ -751,7 +777,7 @@ nav ul li a:hover:after {
 
     .works-about .grid,
     .works-preview .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.8fr;
         text-align: center;
         justify-content: center;
     }
@@ -778,7 +804,7 @@ nav ul li a:hover:after {
     }
 
     .works-mobile-preview .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.8fr;
         text-align: center;
         justify-content: center;
     }
@@ -794,6 +820,8 @@ nav ul li a:hover:after {
     .works-mobile-preview .demo-links {
         grid-column-start: 1;
         grid-column-end: 4;
+        margin: 0 auto;
+        max-width: 500px;
     }
 
     .works-mobile-preview .section-title {
@@ -801,3 +829,50 @@ nav ul li a:hover:after {
     }
 
 }
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbar .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-logo {
+        width: 350px;
+        height: 350px;
+        margin-left: -175px;
+        margin-top: -150px;
+    }
+
+    .project-box {
+        width: 350px;
+        height: 185px;
+    }
+
+    .project-number {
+        font-size: 4rem;
+    }
+
+    .project-desc-copy {
+        top: 3.3rem;
+    }
+
+
+    .index-about .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-about .grid,
+    .works-preview .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-mobile-preview .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
