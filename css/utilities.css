@@ -339,13 +339,13 @@
     }
 
     .container {
-        padding: 0 60px;
+        padding: 10px 60px;
     }
 }
 
 @media (max-width: 1023px) {
     .container {
-        padding: 0 40px;
+        padding: 10px 40px;
     }
 }
 
