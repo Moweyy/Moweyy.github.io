@@ -647,7 +647,7 @@ nav ul li a:hover:after {
 
     .works-about .grid,
     .works-preview .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.9fr;
     }
 
     .works-mobile-preview .grid {
