@@ -598,6 +598,17 @@ nav ul li a:hover:after {
     overflow-x: hidden;
 }
 
+.preview-video {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+
+#tasky-video {
+    outline: none;
+}
+
 .preview-width {
     width: 100%;
 }
